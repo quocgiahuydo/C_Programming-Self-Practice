@@ -18,12 +18,19 @@ typedef struct contact{
 } info;
 
 
-typedef char character;
+typedef char character; 
+
+typedef int* ptr;
 
 int main(){
     character H = 'H';
+
+    ptr testing;
+    *testing= 30; 
     
     printf("testing typedef: %c\n", H);
+
+    printf("value of pointer %d\n", *testing);
     
     info *cpt;
 
