@@ -20,17 +20,20 @@ typedef struct contact{
 
 typedef char character; 
 
-typedef int* ptr;
+typedef int *ptr; 
 
 int main(){
     character H = 'H';
+    
+    int value = 30;
+    ptr var; 
 
-    ptr testing;
-    *testing= 30; 
+    var= &value;
+
     
     printf("testing typedef: %c\n", H);
 
-    printf("value of pointer %d\n", *testing);
+    printf("Value of var is %d\n", *var);
     
     info *cpt;
 
