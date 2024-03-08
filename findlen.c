@@ -14,7 +14,6 @@ void Test(int *arr, int len){
     int count =0;
     while (i<len){
         printf("the value is %d\n",arr[i]);
-
         count +=1;
         i++;
         printf("The length of this array is %d\n", count);
