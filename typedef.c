@@ -17,18 +17,9 @@ typedef struct contact{
     float height;
 } info;
 
-float findLen(float *Arr){
-    float len;
-    len = sizeof(*Arr);
-    printf("The length is: %f\n",len);
-    return len; 
-    
-}
 
-float findlen(int *x, int y){
-    int len;
-    return len= sizeof(x)/sizeof(y);
-}
+
+
 
 
 typedef char character; 
@@ -42,8 +33,7 @@ int main(){
     
     arr temp = {2,3,4,5,66,2,23,32,3};
 
-    findlen(temp,temp[0]);
-
+    printf("The first value is %f\n", temp[0]);
     int i =0;
     while (i<5){
         printf("The value in the aray is %f\n", temp[i]);
