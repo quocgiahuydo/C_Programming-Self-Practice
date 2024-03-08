@@ -22,10 +22,22 @@ typedef char character;
 
 typedef int *ptr; 
 
+typedef float arr[5];
+
 int main(){
     character H = 'H';
     
+    arr temp = {1.3,20.4,30.2,2.2,4.1};
+
+    int i =0;
+    while (i<5){
+        printf("The value in the aray is %f\n", temp[i]);
+        i++;
+    }
+    
+    
     int value = 30;
+    
     ptr var; 
 
     var= &value;
