@@ -23,7 +23,7 @@ struct contact {
  }
 
 void stretchByReference(struct contact *cptr){
-    cptr->height = 1.2;
+    cptr->height = 19;
     strcy(cptr->name, "Reference name ");
 }
 
@@ -41,7 +41,7 @@ int main(){
     George = stretchByValue(George);
 
 
-    printf("%f\n", George.height);
+    printf("His height is: %f\n", George.height);
 
 
     printf("%s\n", George.name);
@@ -84,6 +84,6 @@ int main(){
 
     printf("Another name is %s\n", classlist[0].name);
 
-    printf("Another height of cpt %f\n", cpt->height);
+    printf("Another height of cpt %f\n", classlist[3].height);
     printf("My name is %s\n", cpt->name);
 }
