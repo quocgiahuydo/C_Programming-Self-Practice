@@ -2,7 +2,7 @@
 
 
 void function(int *pointer){
-    int len=sizeof(pointer)/sizeof(pointer[0]);
+    int len=sizeof(*pointer)/sizeof(pointer[0]);
     int sth =0;
     for (int i=0; i<len; i++){
         sth =sth + pointer[i];
