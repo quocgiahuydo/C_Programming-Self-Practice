@@ -17,6 +17,7 @@ int main(){
     /*int arr[]={100,2,5,2};
     function(arr);*/
     int * x; 
+    printf("\n");
     scanf("%d", x);
     printf("The value of x is %d\n",*x);
 }
