@@ -1,1 +1,3 @@
-ldi r0, 11
+	.data 
+
+	.text 
