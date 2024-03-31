@@ -13,10 +13,20 @@ main:
 
 	add $s2, $s0, $s1
 	
+	# $s0= 0x1234abcd
 	li $s0, 0x1234abcd
 
-	li $s4, 2
 
-	add $s3,$s0,$s4
-	
+	addi $s4,$s0,3
+
+	#save register $s4 at memory address 0x10000000	
+
+	li $t0, 0x10000000
+	sw $s4, 0($t0)
+
+	sw $s3, 0xC($t0)
+	li $t1, 'A'
+
+	sb $t1, 5($t0)
 	jr $ra
+
