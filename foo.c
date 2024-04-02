@@ -23,7 +23,7 @@ void foo(){
 
     printf("\n");
     
-    bar(10,8);
+    bar(q,z);
 
 }
 
@@ -33,11 +33,6 @@ int main(){
 
     printf("\n");
     foo();
-    printf("\n");
-
-    printf("\n");
-    foo();
-    printf("\n");
 
     printf("\n");
     foo();

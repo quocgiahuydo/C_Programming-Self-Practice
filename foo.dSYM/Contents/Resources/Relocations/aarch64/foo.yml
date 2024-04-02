@@ -2,8 +2,9 @@
 triple:          'arm64-apple-darwin'
 binary-path:     foo
 relocations:
-  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _foo, symObjAddr: 0x0, symBinAddr: 0x100003E68, symSize: 0xC8 }
-  - { offsetInCU: 0x33, offset: 0x33, size: 0x8, addend: 0x0, symName: _foo, symObjAddr: 0x0, symBinAddr: 0x100003E68, symSize: 0xC8 }
-  - { offsetInCU: 0x54, offset: 0x54, size: 0x8, addend: 0x0, symName: _foo.z, symObjAddr: 0x5A4, symBinAddr: 0x100008000, symSize: 0x0 }
-  - { offsetInCU: 0x9D, offset: 0x9D, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0xC8, symBinAddr: 0x100003F30, symSize: 0x1C }
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _bar, symObjAddr: 0x0, symBinAddr: 0x100003CE8, symSize: 0x78 }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _foo, symObjAddr: 0x78, symBinAddr: 0x100003D60, symSize: 0x154 }
+  - { offsetInCU: 0x62, offset: 0x62, size: 0x8, addend: 0x0, symName: _foo.z, symObjAddr: 0x844, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offsetInCU: 0x9D, offset: 0x9D, size: 0x8, addend: 0x0, symName: _bar, symObjAddr: 0x0, symBinAddr: 0x100003CE8, symSize: 0x78 }
+  - { offsetInCU: 0xCF, offset: 0xCF, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x1CC, symBinAddr: 0x100003EB4, symSize: 0x48 }
 ...
