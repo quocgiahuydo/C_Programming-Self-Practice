@@ -1,0 +1,9 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/harrydo/Documents/CS_120/array'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: __Z7getMeanPii, symObjAddr: 0x0, symBinAddr: 0x100003DE0, symSize: 0x84 }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: __Z7getMeanPii, symObjAddr: 0x0, symBinAddr: 0x100003DE0, symSize: 0x84 }
+  - { offsetInCU: 0xA5, offset: 0xA5, size: 0x8, addend: 0x0, symName: __Z7findLenPi, symObjAddr: 0x84, symBinAddr: 0x100003E64, symSize: 0x1C }
+  - { offsetInCU: 0xDF, offset: 0xDF, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0xA0, symBinAddr: 0x100003E80, symSize: 0xB8 }
+...
