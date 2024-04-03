@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main() {
-    char* buffer = "Hello";
+    char* buffer ="Hello";
     char store_value[10];
     int total_read;
  
