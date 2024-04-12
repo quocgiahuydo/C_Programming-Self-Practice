@@ -14,10 +14,27 @@ void function(int *pointer){
 }
 
 int main(){
-    int arr[]={100,2,5,2};
-    function(arr);
-    /*int * x; s
-    printf("\n");
-    scanf("%d", x);
-    printf("The value of x is %d\n",*x);*/
-}
+    int arr[]={};
+    int ans; 
+    int x = 0;
+    int inp_numb;
+    long int size;
+    do {
+        printf("Do you want to continue");
+        scanf("%d", &ans);
+        printf("Please input a number\n");
+        scanf("%d", &inp_numb);
+        
+        arr[x]= inp_numb;
+
+        //printf("Print the value of array: %d\n", arr[x]);  
+        x=x+1;
+    }
+    while (ans != 1 );
+    for(int i=0; i<10; i++){
+        printf("The value is %d\n", arr[i]);
+    }
+    printf("The size of arr %d\n", x);
+    size = sizeof(arr)/sizeof(arr[0]);
+    printf("The size of array %ld", size);
+}    

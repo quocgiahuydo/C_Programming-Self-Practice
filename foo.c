@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 int x; 
 void bar(int a, int b){
     printf("Value of a: %d\nValue of b: %d\n", a,b);
