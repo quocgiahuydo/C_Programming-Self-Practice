@@ -2,6 +2,7 @@
 
 
 int x; 
+//int q = 0;
 void bar(int a, int b){
     printf("Value of a: %d\nValue of b: %d\n", a,b);
     printf("Address of a:%p\nAddress of b %p\n", &a,&b);
