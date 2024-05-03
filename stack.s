@@ -1,5 +1,5 @@
         .data
-arr: .asciiz "Welcome to CS120"
+arr: .asciiz "Welcome trrh Jahf asdj the woeld "
 
         .text
 main:
@@ -11,19 +11,46 @@ main:
         la $s0, arr
         sw $s0, 0($sp)
 WHILE: 
-        lw $t1, 0($s0)
+        lb $t1, 0($s0)
         beq $t1, $0, DONE
 
-        mv $a0, $t1
+        move $a0, $t1
         jal switchcase 
 
-        sw $v0, 0($s0)
+        sb $v0, 0($s0)
 
         addi $s0, $s0, 1
-        sw $s0, $sp
+        sw $s0, 0($sp)
+        j WHILE
 
 
 DONE:
 
-switchcase
+        li $v0, 4
+        la $a0, arr
+        syscall
+
+        lw $ra, 4($sp)
+        addi $sp, $sp, 8
+        jr $ra
+
+
+
+
+switchcase:
+        addi $sp, $sp, -4
+        sw $ra,  0($sp)
+        li $t0, 'a'
+        blt $a0, $t0, s_done
+
+        li $t0, 'z'
+        bgt $a0, $t0, s_done
+        addi, $a0, $a0, -32
+
+s_done:
+        move $v0, $a0
+        lw $ra 0($sp)
+        addi $sp, $sp, 4
+        jr $ra
+
 

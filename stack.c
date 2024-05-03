@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-char arr[]= "GAHGASDGAGHJS";
+char arr[]= "Welcome to CS120";
 char switchcashe(char ch){
-    if ((ch>='A')&&(ch <='Z')){
-        ch = ch +32;
+    if ((ch>='a')&&(ch <='z')){
+        ch = ch -32;
     }
     return ch;
 }
