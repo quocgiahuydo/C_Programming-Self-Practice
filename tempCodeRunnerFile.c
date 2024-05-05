@@ -1,2 +1,1 @@
-
-    head= temper_2;
+store_value

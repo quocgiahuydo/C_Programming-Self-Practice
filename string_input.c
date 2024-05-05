@@ -6,7 +6,7 @@ int main() {
     int total_read;
     char *pts;
  
-    total_read = sscanf(buffer, "%s" , store_value);
+   //
 
     printf("Value in buffer: %s",store_value);
     printf("\nTotal items read: %d\n",total_read);
