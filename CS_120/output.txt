@@ -1,0 +1,16 @@
+How many number are you about to enter?:  
+The number is: 10
+Please enter your number: 3.200000
+4.800000
+11.600000
+-207.399994
+300.000000
+4.000000
+55.000000
+88.199997
+16.200001
+16.200001
+291.800049
+Minimum is -207.399994
+Maximum is 300.000000
+Average is 29.180004
